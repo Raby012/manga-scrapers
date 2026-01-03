@@ -31,7 +31,7 @@ class Asurascans:
                 tempContent["chapters"] = items.find("div", class_="epxs").get_text()
                 content.append(tempContent)
 
-            self.results["results"].append(content)
+            self.results["results"] = content
             return self.results
         except Exception as e:
             self.results["results"] = e
