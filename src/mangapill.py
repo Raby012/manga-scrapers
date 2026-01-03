@@ -81,7 +81,7 @@ class Mangapill:
             tempContent["year"] = soup.select_one(
                 "body > div.container > div.flex.flex-col > div.flex.flex-col > div.grid.grid-cols-1 > div:nth-child(3) > div"
             ).get_text()
-
+            tempContent["id"] = id
             genresSelector = soup.select(
                 "body > div.container > div.flex.flex-col > div.flex.flex-col > div:nth-child(4) > a"
             )
