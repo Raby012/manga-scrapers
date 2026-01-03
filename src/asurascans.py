@@ -99,7 +99,7 @@ class Asurascans:
                 chapters.append(tempChapter)
             content["chapters"] = chapters
 
-            self.results["results"].append(content)
+            self.results["results"] = content
             return self.results
         except Exception as e:
             self.results["results"] = e
